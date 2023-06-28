@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url(https://b.kisscc0.com/20180517/rlw/kisscc0-travel-website-web-hosting-service-namecheap-domai-nature-5afd874a85c6a4.669703911526564682548.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    main {
+      max-width: 400px;
+      margin: 100px auto;
+      border: 2px solid wheat;
+      padding: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: rgb(26, 255, 0);
+      animation: colorChange 2s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      from {
+        color: rgb(81, 239, 64);
+      }
+      to {
+        color: rgb(55, 207, 245);
+      }
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 9px;
+      font-weight: bold;
+      color: aliceblue;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #e13737;
+      animation: slideIn 1s;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    input[type="submit"] {
+      background-color: #bfdf1b;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #7beb65;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <form action="webiste.html" method="post">
+      <h1>Login</h1>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div><br>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div><br>
+      <div style="display: flex; justify-content: center;">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </main>
+</body>
+</html>

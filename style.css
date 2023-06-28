@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(webiste.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.nav-links ul li:hover a {
+    color: #e84393;
+}
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e50f76;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.user-auth button {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: none;
+    background: #e50f76;
+    color: white;
+    cursor: pointer;
+}
+
+.user-auth .login {
+    background: #e84393;
+}
+
+.user-auth .signup {
+    background: #e50f76;
+}@keyframes h1Animation {
+    0% {
+        color: #f05353;
+    }
+    50% {
+        color: #74f374;
+    }
+    100% {
+        color: #7ec5eb;
+    }
+}
+
+@keyframes pAnimation {
+    0% {
+        color: #f6b16c;
+    }
+    50% {
+        color: #f57bf5;
+    }
+    100% {
+        color: #ad63f7;
+    }
+}
+
+.animate-h1 {
+    animation: h1Animation 3s infinite;
+}
+
+.animate-p {
+    animation: pAnimation 3s infinite;
+}
+@keyframes homeAnimation {
+    0% {
+      color: #f1a5a5;
+      font-size: 20px;
+    }
+    50% {
+      color: #a8efa8;
+      font-size: 24px;
+    }
+    100% {
+      color: #ababe8;
+      font-size: 28px;
+    }
+  }
+  
+  @keyframes aboutAnimation {
+    0% {
+      color: #edc398;
+      font-size: 20px;
+    }
+    50% {
+      color: #e08be0;
+      font-size: 24px;
+    }
+    100% {
+      color: #c397f0;
+      font-size: 28px;
+    }
+  }
+  
+  @keyframes contactAnimation {
+    0% {
+      color: #80dbdb;
+      font-size: 20px;
+    }
+    50% {
+      color: #f9f97b;
+      font-size: 24px;
+    }
+    100% {
+      color: #c277c2;
+      font-size: 28px;
+    }
+  }
+  
+  .animate-home {
+    animation: homeAnimation 3s infinite;
+  }
+  
+  .animate-about {
+    animation: aboutAnimation 3s infinite;
+  }
+  
+  .animate-contact {
+    animation: contactAnimation 3s infinite;
+  }
+  
+
+.content {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.content h1 {
+    margin-top: 80px;
+    font-size: 70px;
+}
+
+.content p {
+    margin: 20px auto;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid #f386bb;
+    background: transparent;
+    color: wheat;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e84393;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.footer {
+    padding: 20px 9%;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer .box-container .box {
+    flex: 1 1 250px;
+}
+
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: #666;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+.footer .credit {
+    text-align: center;
+    padding-left: 30%;
+    margin-top: 15px;
+    padding-top: 25px;
+    font-size: 20px;
+    color: #333;
+    border-top: 1ps solid rgba(0, 0, 0, 0.1);
+}
